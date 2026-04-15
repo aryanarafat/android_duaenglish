@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:background="@drawable/linear_round_backgrond"
+            android:layout_height="40dp">
+
+
+            <TextView
+                android:id="@+id/dua_number"
+                android:layout_width="wrap_content"
+                android:text="1"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content">
+
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/dua_title"
+            android:text="When weaking UP"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end|center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:src="@drawable/outline_delete_24"
+                android:layout_height="wrap_content"
+                app:tint="@color/top_color">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/expandLayout"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/sub_list_sample">
+
+        </include>
+
+        <include
+            layout="@layout/sub_list_sample">
+
+        </include>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subDuaRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        app:dividerColor="#DBD7D7"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="0.9dp">
+
+    </com.google.android.material.divider.MaterialDivider>
+
+
+
+
+
+
+</LinearLayout>

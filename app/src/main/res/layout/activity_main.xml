@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/top_color"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            app:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <include
+                    android:id="@+id/appTopBar"
+                    layout="@layout/app_top_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <include
+                layout="@layout/home_layout">
+
+            </include>
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/viewpager_background"
+        android:layout_height="match_parent">
+
+        <com.yeasinrabbee.duaenglish.Utils.NonSwappableViewPager
+            android:id="@+id/pager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/viewpager_background"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_color_primary_dark_for_text">#FFFFFF</color>
+    <color name="ripple_color">#fed7d2</color>
+    <color name="app_color_secondary_grey_for_text">#ff9b9b9b</color>
+
+    <color name="pink_skin">#ffb566</color>
+    <color name="preference_fallback_accent_color">#ff008577</color>
+    <color name="primaryColor">#ffffd583</color>
+    <color name="primaryColorDark">#feffba44</color>
+    <color name="primaryColorLight">#fde9c1</color>
+    <color name="primaryColorNight">#424242</color>
+    <color name="primaryColorNightDark">#2a2a2a</color>
+    <color name="primaryColorNightLight">#4f4f50</color>
+
+    <color name="accentColor">#feffba44</color>
+    <color name="accentColorNight">#fe3ab6bf</color>
+    <color name="accentColorNightDark">#fe2f9299</color>
+    <color name="top_color">#118B6E</color>
+</resources>

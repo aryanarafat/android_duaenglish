@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clInHomeTab"
+    android:layout_width="match_parent"
+    android:background="@color/top_color"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:id="@+id/ivHomeTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/HomeTab"
+        app:layout_constraintStart_toStartOf="@+id/HomeTab"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_home_tab_selected" />
+
+    <TextView
+        android:id="@+id/tvHomeTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/home"
+        android:textColor="@color/app_color_primary_dark_for_text"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/HomeTab"
+        app:layout_constraintStart_toStartOf="@+id/HomeTab"
+        app:layout_constraintTop_toBottomOf="@+id/ivHomeTab" />
+
+    <View
+        android:id="@+id/HomeTab"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/categoryTab"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivGenreTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/categoryTab"
+        app:layout_constraintStart_toStartOf="@+id/categoryTab"
+        app:layout_constraintTop_toTopOf="@+id/ivHomeTab"
+        app:srcCompat="@drawable/ic_genre_deselected" />
+
+    <TextView
+        android:id="@+id/tvGenreTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/category"
+        android:textColor="@color/app_color_primary_dark_for_text"
+        android:textSize="16dp"
+       
+        app:layout_constraintBottom_toBottomOf="@+id/tvHomeTab"
+        app:layout_constraintEnd_toEndOf="@+id/categoryTab"
+        app:layout_constraintStart_toStartOf="@+id/categoryTab"
+        app:layout_constraintTop_toBottomOf="@+id/ivGenreTab" />
+
+    <View
+        android:id="@+id/categoryTab"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/favorite"
+        app:layout_constraintStart_toEndOf="@+id/HomeTab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivTopTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/favorite"
+        app:layout_constraintStart_toStartOf="@+id/favorite"
+        app:layout_constraintTop_toTopOf="@+id/ivHomeTab"
+        app:srcCompat="@drawable/ic_top_deselected" />
+
+    <TextView
+        android:id="@+id/tvTopTab"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/favorite"
+        android:textColor="@color/app_color_primary_dark_for_text"
+        android:textSize="16dp"
+       
+        app:layout_constraintBottom_toBottomOf="@+id/tvHomeTab"
+        app:layout_constraintEnd_toEndOf="@+id/ivTopTab"
+        app:layout_constraintStart_toStartOf="@+id/ivTopTab"
+        app:layout_constraintTop_toBottomOf="@+id/ivTopTab" />
+
+    <View
+        android:id="@+id/favorite"
+        android:layout_width="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/categoryTab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
